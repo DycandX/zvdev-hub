@@ -9,7 +9,7 @@ export default function SchemaMarkup() {
     "jobTitle": "Software Engineer",
     "sameAs": [
       "https://github.com/DycandX",
-      "https://linkedin.com/in/zulvikarknm"
+      "https://linkedin.com/in/zulvikar-kharisma"
     ]
   };
 
