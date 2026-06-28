@@ -102,7 +102,7 @@ npm run build
 
 ---
 
-## 🛸 Workflow Git & Branching Strategy (Senior Standard)
+## 🛸 Workflow Git & Branching Strategy
 Repositori ini melarang commit langsung ke branch utama. Ikuti aturan alur kerja Git berikut secara disiplin:
 
 ```text
