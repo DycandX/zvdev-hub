@@ -7,7 +7,7 @@
     "description": "Central Gateway Landing Page & Engineering Lab Hub yang mengintegrasikan seluruh ekosistem sub-proyek digital.",
     "techStack": ["Next.js", "Tailwind CSS", "TypeScript", "Vercel"],
     "isCollaborative": false,
-    "statusApi": "https://status.zvdev.cloud/api/health/hub"
+    "statusApi": "/api/health?id=hub"
   },
   {
     "id": "portfolio",
@@ -17,7 +17,7 @@
     "description": "Personal CV & Portofolio interaktif untuk menampilkan profil profesional, keterampilan teknis, dan riwayat karir.",
     "techStack": ["Next.js", "Tailwind CSS", "Astro"],
     "isCollaborative": false,
-    "statusApi": "https://status.zvdev.cloud/api/health/portfolio"
+    "statusApi": "/api/health?id=portfolio"
   },
   {
     "id": "synapse",
@@ -27,7 +27,7 @@
     "description": "AI-Integrated Support Inbox yang menyatukan percakapan dari berbagai platform ke dalam satu dashboard cerdas.",
     "techStack": ["React", "Node.js", "Gemini API", "Tailwind CSS"],
     "isCollaborative": false,
-    "statusApi": "https://status.zvdev.cloud/api/health/synapse"
+    "statusApi": "/api/health?id=synapse"
   },
   {
     "id": "utils",
@@ -37,7 +37,7 @@
     "description": "Kumpulan alat utilitas pengembangan open-source (formatter, encoder, generator) yang dirancang untuk produktivitas developer.",
     "techStack": ["Next.js", "Tailwind CSS", "TypeScript"],
     "isCollaborative": false,
-    "statusApi": "https://status.zvdev.cloud/api/health/utils"
+    "statusApi": "/api/health?id=utils"
   },
   {
     "id": "guard",
@@ -47,7 +47,7 @@
     "description": "Sistem monitoring uptime terpusat untuk memantau kesehatan server, database, dan IoT nodes secara real-time.",
     "techStack": ["Go", "InfluxDB", "React", "Cloudflare Workers"],
     "isCollaborative": false,
-    "statusApi": "https://status.zvdev.cloud/api/health/guard"
+    "statusApi": "/api/health?id=guard"
   },
   {
     "id": "wonton",
@@ -57,7 +57,7 @@
     "description": "Platform e-commerce modular yang dikembangkan sebagai proyek kolaboratif kelompok untuk simulasi toko digital modern.",
     "techStack": ["Next.js", "PostgreSQL", "Prisma", "Tailwind CSS"],
     "isCollaborative": false,
-    "statusApi": "https://status.zvdev.cloud/api/health/wonton"
+    "statusApi": "/api/health?id=wonton"
   },
   {
     "id": "analyzer",
@@ -67,6 +67,6 @@
     "description": "Alat analisis resume otomatis berbasis AI yang dikembangkan bersama rekan tim untuk menilai kelayakan CV terhadap lowongan kerja.",
     "techStack": ["Next.js", "Python", "FastAPI", "OpenAI API"],
     "isCollaborative": true,
-    "statusApi": "https://status.zvdev.cloud/api/health/analyzer"
+    "statusApi": "/api/health?id=analyzer"
   }
 ]

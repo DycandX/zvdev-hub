@@ -31,7 +31,6 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 
         const response = await fetch(project.statusApi, {
           signal: controller.signal,
-          mode: "cors",
         });
 
         clearTimeout(timeoutId);
