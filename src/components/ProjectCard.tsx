@@ -96,10 +96,18 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     }
   };
 
+  const hoverBorderColor = project.isCollaborative
+    ? "hover:border-violet-500/40 hover:shadow-[0_0_25px_rgba(139,92,246,0.12)]"
+    : "hover:border-cyan-500/40 hover:shadow-[0_0_25px_rgba(6,182,212,0.12)]";
+
+  const glowGradient = project.isCollaborative
+    ? "group-hover:to-violet-500/10"
+    : "group-hover:to-cyan-500/10";
+
   return (
-    <div className="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-white/5 bg-gray-950/40 p-6 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-cyan-500/30 hover:bg-gray-950/60 hover:shadow-[0_8px_30px_rgb(0,0,0,0.5)]">
+    <div className={`group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-white/5 bg-gray-950/40 p-6 backdrop-blur-md transition-all duration-500 ease-out hover:-translate-y-1 ${hoverBorderColor} hover:bg-gray-950/60`}>
       {/* Background glow effect on hover */}
-      <div className="absolute -inset-px -z-10 rounded-2xl bg-gradient-to-br from-transparent via-transparent to-cyan-500/0 opacity-0 transition-all duration-500 group-hover:to-cyan-500/10 group-hover:opacity-100" />
+      <div className={`absolute -inset-px -z-10 rounded-2xl bg-gradient-to-br from-transparent via-transparent to-transparent opacity-0 transition-all duration-500 ${glowGradient} group-hover:opacity-100`} />
       
       <div>
         {/* Header: Title and Status */}

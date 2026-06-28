@@ -1,6 +1,7 @@
 import projects from "@/data/projects.json";
 import Header from "@/components/Header";
 import ProjectCard from "@/components/ProjectCard";
+import InteractiveGrid from "@/components/InteractiveGrid";
 
 export const metadata = {
   title: "zvdev.cloud — Ecosystem & Central Hub",
@@ -14,8 +15,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-[#030712] text-gray-100 selection:bg-cyan-500/30 selection:text-cyan-200">
-      {/* Decorative top background grid/dots */}
-      <div className="absolute inset-0 -z-20 bg-[linear-gradient(to_right,#1f293710_1px,transparent_1px),linear-gradient(to_bottom,#1f293710_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
+      <InteractiveGrid />
       
       <Header />
 
@@ -25,7 +25,10 @@ export default function Home() {
           
           {/* Bento Item 1: Main Gateway Info (Spans 2 columns on desktop) */}
           {featuredProject && (
-            <div className="relative overflow-hidden rounded-2xl border border-cyan-500/20 bg-gradient-to-br from-cyan-950/20 via-gray-950/40 to-gray-950/20 p-8 backdrop-blur-md md:col-span-2 flex flex-col justify-between hover:border-cyan-500/40 transition-all duration-300">
+            <div className="group relative overflow-hidden rounded-2xl border border-cyan-500/20 bg-gradient-to-br from-cyan-950/20 via-gray-950/40 to-gray-950/20 p-8 backdrop-blur-md md:col-span-2 flex flex-col justify-between hover:border-cyan-500/40 hover:shadow-[0_0_30px_rgba(6,182,212,0.15)] transition-all duration-500 ease-out">
+              {/* Background glow effect on hover */}
+              <div className="absolute -inset-px -z-10 rounded-2xl bg-gradient-to-br from-transparent via-transparent to-cyan-500/10 opacity-0 transition-all duration-500 group-hover:opacity-100" />
+              
               {/* Internal neon line decoration */}
               <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-cyan-500 to-transparent" />
               
