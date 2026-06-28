@@ -4,10 +4,10 @@ import { NextRequest, NextResponse } from "next/server";
 const EXTERNAL_ENDPOINTS: Record<string, string> = {
   hub: "https://status.zvdev.cloud/api/health/hub",
   portfolio: "https://status.zvdev.cloud/api/health/portfolio",
-  synapse: "https://status.zvdev.cloud/api/health/synapse",
-  "dev-utils": "https://status.zvdev.cloud/api/health/utils",
+  synapse: "https://status.zvdev.cloud/api/health/synapse-cs",
+  "dev-utils": "https://status.zvdev.cloud/api/health/dev-utils",
   status: "https://status.zvdev.cloud/api/health/guard",
-  wontonverse: "https://status.zvdev.cloud/api/health/wonton",
+  wontonverse: "https://status.zvdev.cloud/api/health/wontonverse",
 };
 
 // Mock statuses for local development fallback
