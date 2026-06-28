@@ -1,0 +1,72 @@
+[
+  {
+    "id": "hub",
+    "name": "zvdev.cloud Hub",
+    "subdomain": "zvdev.cloud",
+    "url": "https://zvdev.cloud",
+    "description": "Central Gateway Landing Page & Engineering Lab Hub yang mengintegrasikan seluruh ekosistem sub-proyek digital.",
+    "techStack": ["Next.js", "Tailwind CSS", "TypeScript", "Vercel"],
+    "isCollaborative": false,
+    "statusApi": "https://status.zvdev.cloud/api/health/hub"
+  },
+  {
+    "id": "portfolio",
+    "name": "Personal Portfolio",
+    "subdomain": "zulvikar.zvdev.cloud",
+    "url": "https://zulvikar.zvdev.cloud",
+    "description": "Personal CV & Portofolio interaktif untuk menampilkan profil profesional, keterampilan teknis, dan riwayat karir.",
+    "techStack": ["Next.js", "Tailwind CSS", "Astro"],
+    "isCollaborative": false,
+    "statusApi": "https://status.zvdev.cloud/api/health/portfolio"
+  },
+  {
+    "id": "synapse",
+    "name": "Synapse-CS Inbox",
+    "subdomain": "synapse-cs.zvdev.cloud",
+    "url": "https://synapse-cs.zvdev.cloud",
+    "description": "AI-Integrated Support Inbox yang menyatukan percakapan dari berbagai platform ke dalam satu dashboard cerdas.",
+    "techStack": ["React", "Node.js", "Gemini API", "Tailwind CSS"],
+    "isCollaborative": false,
+    "statusApi": "https://status.zvdev.cloud/api/health/synapse"
+  },
+  {
+    "id": "utils",
+    "name": "DevUtils Tools",
+    "subdomain": "utils.zvdev.cloud",
+    "url": "https://utils.zvdev.cloud",
+    "description": "Kumpulan alat utilitas pengembangan open-source (formatter, encoder, generator) yang dirancang untuk produktivitas developer.",
+    "techStack": ["Next.js", "Tailwind CSS", "TypeScript"],
+    "isCollaborative": false,
+    "statusApi": "https://status.zvdev.cloud/api/health/utils"
+  },
+  {
+    "id": "guard",
+    "name": "Node-Guard Monitor",
+    "subdomain": "status.zvdev.cloud",
+    "url": "https://status.zvdev.cloud",
+    "description": "Sistem monitoring uptime terpusat untuk memantau kesehatan server, database, dan IoT nodes secara real-time.",
+    "techStack": ["Go", "InfluxDB", "React", "Cloudflare Workers"],
+    "isCollaborative": false,
+    "statusApi": "https://status.zvdev.cloud/api/health/guard"
+  },
+  {
+    "id": "wonton",
+    "name": "WontonVerse Shop",
+    "subdomain": "wonton.zvdev.cloud",
+    "url": "https://wonton.zvdev.cloud",
+    "description": "Platform e-commerce modular yang dikembangkan sebagai proyek kolaboratif kelompok untuk simulasi toko digital modern.",
+    "techStack": ["Next.js", "PostgreSQL", "Prisma", "Tailwind CSS"],
+    "isCollaborative": false,
+    "statusApi": "https://status.zvdev.cloud/api/health/wonton"
+  },
+  {
+    "id": "analyzer",
+    "name": "CV Analyzer Node",
+    "subdomain": "analyzer.zvdev.cloud",
+    "url": "https://analyzer.zvdev.cloud",
+    "description": "Alat analisis resume otomatis berbasis AI yang dikembangkan bersama rekan tim untuk menilai kelayakan CV terhadap lowongan kerja.",
+    "techStack": ["Next.js", "Python", "FastAPI", "OpenAI API"],
+    "isCollaborative": true,
+    "statusApi": "https://status.zvdev.cloud/api/health/analyzer"
+  }
+]
