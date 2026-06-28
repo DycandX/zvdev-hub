@@ -19,9 +19,6 @@ export const metadata: Metadata = {
     template: "%s | zvdev.cloud",
   },
   description: "Pusat kendali & pameran teknologi modular digital milik Zulvikar Kharisma.",
-  icons: {
-    icon: "/favicon.ico",
-  },
   openGraph: {
     title: "zvdev.cloud — Ecosystem & Central Hub",
     description: "Pusat kendali dan showcase teknologi modular digital milik Zulvikar Kharisma.",
