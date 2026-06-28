@@ -5,10 +5,9 @@ const EXTERNAL_ENDPOINTS: Record<string, string> = {
   hub: "https://status.zvdev.cloud/api/health/hub",
   portfolio: "https://status.zvdev.cloud/api/health/portfolio",
   synapse: "https://status.zvdev.cloud/api/health/synapse",
-  utils: "https://status.zvdev.cloud/api/health/utils",
-  guard: "https://status.zvdev.cloud/api/health/guard",
-  wonton: "https://status.zvdev.cloud/api/health/wonton",
-  analyzer: "https://status.zvdev.cloud/api/health/analyzer",
+  "dev-utils": "https://status.zvdev.cloud/api/health/utils",
+  status: "https://status.zvdev.cloud/api/health/guard",
+  wontonverse: "https://status.zvdev.cloud/api/health/wonton",
 };
 
 // Mock statuses for local development fallback
@@ -16,10 +15,9 @@ const MOCK_STATUSES: Record<string, string> = {
   hub: "online",
   portfolio: "online",
   synapse: "online",
-  utils: "online",
-  guard: "online",
-  wonton: "offline",
-  analyzer: "unknown",
+  "dev-utils": "online",
+  status: "online",
+  wontonverse: "offline",
 };
 
 export async function GET(request: NextRequest) {
