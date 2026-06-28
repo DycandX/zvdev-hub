@@ -157,7 +157,8 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             href={project.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 text-sm font-semibold text-white group-hover:text-cyan-400 transition-colors duration-200"
+            className={`inline-flex items-center gap-1 text-sm font-semibold text-white ${project.isCollaborative ? "group-hover:text-violet-400" : "group-hover:text-cyan-400"} transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 ${project.isCollaborative ? "focus-visible:ring-violet-500" : "focus-visible:ring-cyan-500"} focus-visible:rounded focus-visible:ring-offset-2 focus-visible:ring-offset-gray-950`}
+            aria-label={`Kunjungi aplikasi ${project.name}`}
           >
             Visit App
             <svg

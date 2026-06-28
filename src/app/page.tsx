@@ -2,6 +2,7 @@ import projects from "@/data/projects.json";
 import Header from "@/components/Header";
 import ProjectCard from "@/components/ProjectCard";
 import InteractiveGrid from "@/components/InteractiveGrid";
+import SchemaMarkup from "@/components/SchemaMarkup";
 
 export const metadata = {
   title: "zvdev.cloud — Ecosystem & Central Hub",
@@ -16,12 +17,13 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#030712] text-gray-100 selection:bg-cyan-500/30 selection:text-cyan-200">
       <InteractiveGrid />
+      <SchemaMarkup />
       
       <Header />
 
       <main className="mx-auto max-w-7xl px-6 pb-24 lg:px-8">
         {/* Bento Grid Container */}
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <section aria-label="Ecosystem Projects Grid" className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           
           {/* Bento Item 1: Main Gateway Info (Spans 2 columns on desktop) */}
           {featuredProject && (
@@ -69,7 +71,8 @@ export default function Home() {
                 </div>
                 <a
                   href={featuredProject.url}
-                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-cyan-500 px-4 py-2.5 text-sm font-semibold text-gray-950 hover:bg-cyan-400 transition-colors duration-200 shadow-[0_0_15px_rgba(6,182,212,0.4)]"
+                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-cyan-500 px-4 py-2.5 text-sm font-semibold text-gray-950 hover:bg-cyan-400 transition-colors duration-200 shadow-[0_0_15px_rgba(6,182,212,0.4)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-950"
+                  aria-label="Konfigurasi gateway root zvdev.cloud"
                 >
                   Configure Gateway
                   <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor">
@@ -135,7 +138,7 @@ export default function Home() {
             <ProjectCard key={project.id} project={project} />
           ))}
 
-        </div>
+        </section>
       </main>
 
       <footer className="border-t border-white/5 py-12 text-center text-xs text-gray-500 font-mono">
