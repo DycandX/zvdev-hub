@@ -10,7 +10,7 @@ A collection of skills for Claude.ai and Claude Code for senior software enginee
 Read `docs/workflow.md` untuk branching strategy, commit convention, dan step-by-step workflow.
 
 Aturan singkat:
-- **Jangan commit langsung ke `main` atau `develop`.** Selalu bikin branch.
+- **Jangan commit langsung ke `master` atau `develop`.** Selalu bikin branch.
 - Naming: `<prefix>/<kebab-case>` — `feat/`, `fix/`, `perf/`, `sec/`, `chore/`
 - Commit: Conventional Commits — `<type>(<scope>): <message>`
 - **Rebase sebelum push PR**, squash merge ke develop
